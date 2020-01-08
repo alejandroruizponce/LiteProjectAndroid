@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CurrentVersion.NavigationMenu.Fragment_NewChekin" android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="w,1:1" android:id="@+id/appBarLayout">
+        <android.support.v7.widget.Toolbar android:layout_width="match_parent" android:layout_height="wrap_content"
+                                           android:background="@color/white"
+                                           android:id="@+id/toolbar"
+                                           android:minHeight="56dp" app:layout_constraintEnd_toEndOf="parent"
+                                           app:layout_constraintStart_toStartOf="parent"
+                                           app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                    android:text="@string/nuevochekin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/titleBarNewChek"
+                    android:layout_marginLeft="70dp"
+                    android:layout_gravity="center_vertical" android:fontFamily="@font/robotomedium"
+                    tools:layout_editor_absoluteY="21dp" android:textSize="18dp" android:textColor="#00429A"
+            />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/scrollView4">
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/propertyNC"
+                    android:layout_height="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/whiteBlue" android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toTopOf="parent">
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/expand_more"
+                        android:id="@+id/imageButton1NC" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:scaleType="fitXY"
+                        android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp" android:layout_gravity="center_vertical"/>
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:errorEnabled="false"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp">
+                    <com.reginald.editspinner.EditSpinner
+                            android:id="@+id/propertyNCEditText"
+                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:editable="false"
+                            android:paddingTop="5dp"
+                            android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                            android:textColor="@color/darkBlue" android:singleLine="false"
+                            android:selectAllOnFocus="false"
+                            android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="3dp"
+                        android:text="@string/seleccionar_propiedad" android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/softBlue" android:layout_marginStart="15dp" android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/responsibleNC"
+                    android:layout_height="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/whiteBlue"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/propertyNC">
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/expand_more"
+                        android:id="@+id/imageButton1NC2" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:scaleType="fitXY"
+                        android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp" android:layout_gravity="center_vertical"
+                        android:rotation="-90"/>
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:errorEnabled="false"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp">
+                    <EditText
+                            android:id="@+id/responsibleNCEditText"
+                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:editable="false"
+                            android:paddingTop="5dp"
+                            android:textColorHighlight="@color/softBlueWithAlpha"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                            android:textColor="@color/darkBlue" android:singleLine="false"
+                            android:selectAllOnFocus="false"
+                            android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="3dp"
+                        android:text="@string/responsable" android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/softBlue" android:layout_marginStart="15dp" android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/checkInDateNC"
+                    android:layout_height="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/whiteBlue"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/responsibleNC">
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/icon_event_sharp"
+                        android:id="@+id/imageButton1NC12" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:scaleType="fitXY"
+                        android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp" android:layout_gravity="center_vertical"
+                />
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:errorEnabled="false"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp">
+                    <EditText
+                            android:id="@+id/checkInDateNCEditText"
+                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:textColorHighlight="@color/softBlueWithAlpha"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:editable="false"
+                            android:paddingTop="5dp"
+                            android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                            android:textColor="@color/darkBlue" android:singleLine="false"
+                            android:selectAllOnFocus="false"
+                            android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="3dp"
+                        android:text="@string/fecha_de_entrada" android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/softBlue" android:layout_marginStart="15dp" android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/nightsNC"
+                    android:layout_height="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/whiteBlue"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/checkInDateNC">
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:errorEnabled="false"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp">
+                    <EditText
+                            android:id="@+id/nightsNCEditText"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:textColorHighlight="@color/softBlueWithAlpha"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:paddingTop="5dp"
+                            android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                            android:textColor="@color/darkBlue" android:singleLine="false"
+                            android:selectAllOnFocus="false"
+                            android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="3dp"
+                        android:text="@string/n_mero_de_noches" android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/softBlue" android:layout_marginStart="15dp" android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/guestsOlderNC"
+                    android:layout_height="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/whiteBlue"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/nightsNC">
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:errorEnabled="false"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp">
+                    <EditText
+                            android:id="@+id/guestsOlderNCEditText"
+                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:inputType="number"
+                            android:textColorHighlight="@color/softBlueWithAlpha"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:paddingTop="5dp"
+                            android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                            android:textColor="@color/darkBlue" android:singleLine="false"
+                            android:selectAllOnFocus="false"
+                            android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                        android:id="@+id/guestsOlder14TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:paddingTop="3dp"
+                        android:text="@string/huespedes_mayores_de_14_a_os"
+                        android:textColor="@color/softBlue"
+                        android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/typeBookingNC"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/whiteBlue"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/numberRoomNC">
+
+                <ImageButton
+                        android:id="@+id/imageButton1NC14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/expand_more" />
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="354dp"
+                        android:layout_height="match_parent"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp"
+                        app:errorEnabled="false">
+
+                    <com.reginald.editspinner.EditSpinner
+                            android:id="@+id/typeBookingEditTextNC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:editable="false"
+                            android:fontFamily="@font/robotoregular"
+                            android:padding="15dp"
+                            android:paddingTop="5dp"
+                            android:selectAllOnFocus="false"
+                            android:singleLine="false"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/darkBlue"
+                            android:textColorLink="#3F51B5"
+                            android:textSize="18dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:paddingTop="3dp"
+                        android:text="@string/typeBooking"
+                        android:textColor="@color/softBlue"
+                        android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/numberRoomNC"
+                    android:layout_height="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/whiteBlue"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/guestsOlderNC">
+
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/expand_more"
+                        android:id="@+id/imageButton1NC13" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:scaleType="fitXY"
+                        android:layout_centerVertical="true" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp" android:layout_gravity="center_vertical"
+                />
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" app:errorEnabled="false"
+                        app:boxStrokeColor="@color/darkBlue"
+                        app:boxStrokeWidth="1sp">
+                    <com.reginald.editspinner.EditSpinner
+                            android:id="@+id/numberRoomNCEditText"
+                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:editable="false"
+                            android:paddingTop="5dp"
+                            android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                            android:textColor="@color/darkBlue" android:singleLine="false"
+                            android:selectAllOnFocus="false"
+                            android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="3dp"
+                        android:text="@string/n_mero_de_habitaci_n" android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/softBlue" android:layout_marginStart="15dp" android:textSize="14dp"/>
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/buttonAddGuestsLaterNC"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/blueborder_button"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="@string/a_adir_huespedes_m_s_tarde"
+                    android:textColor="@color/softBlue"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/typeBookingNC" />
+
+            <Button
+                    android:text="@string/a_adir_huespedes"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/buttonAddGuestsNC"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="16dp"
+                    app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonAddGuestsLaterNC"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="32dp"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

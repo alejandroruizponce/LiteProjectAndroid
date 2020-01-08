@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:focusable="true"
+                                             android:focusableInTouchMode="true"
+                                             tools:context=".OldVersionFiles.Fragment_Register" android:background="@color/white">
+
+    <Button
+            android:id="@+id/buttonPolicyPrivacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/pol_tica_de_privacidad"
+            android:textColor="@color/softBlue"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/PrivacySwitcher"
+            app:layout_constraintStart_toEndOf="@+id/PrivacySwitcher"
+            app:layout_constraintTop_toTopOf="@+id/PrivacySwitcher" />
+
+    <CheckBox
+            android:id="@+id/PrivacySwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/acepto_la"
+            android:textColor="@color/darkBlue"
+            android:textColorLink="@color/darkBlue"
+            android:textSize="14dp"
+            app:buttonTint="@color/darkBlue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TyCSwitcher" />
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/typeSuscriptionView"
+            android:layout_height="65dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/whiteBlue"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp">
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:errorEnabled="false" app:boxStrokeColor="@color/darkBlue"
+                app:boxStrokeWidth="1sp">
+            <EditText
+                    android:id="@+id/typeSuscriptionEditText"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="5dp"
+                    android:textColorHighlight="@color/softBlueWithAlpha"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                    android:textColor="@color/darkBlue" android:singleLine="false" android:selectAllOnFocus="false"
+                    android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotoregular"
+                android:paddingTop="3dp"
+                android:text="@string/emailRegister"
+                android:textColor="@color/softBlue"
+                android:textSize="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/phoneRegisterView"
+            android:layout_height="65dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/whiteBlue"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="0.389" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/typeSuscriptionView">
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:errorEnabled="false" app:boxStrokeColor="@color/darkBlue"
+                app:boxStrokeWidth="1sp">
+            <EditText
+                    android:id="@+id/phoneRegisterEditext"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:inputType="phone"
+                    android:paddingTop="5dp"
+                    android:textColorHighlight="@color/softBlueWithAlpha"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                    android:textColor="@color/darkBlue" android:singleLine="false" android:selectAllOnFocus="false"
+                    android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotoregular"
+                android:paddingTop="3dp"
+                android:text="@string/phoneRegister"
+                android:textColor="@color/softBlue"
+                android:textSize="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/nameRegisterView"
+            android:layout_height="65dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/whiteBlue"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/phoneRegisterView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginStart="16dp">
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:errorEnabled="false" app:boxStrokeColor="@color/darkBlue"
+                app:boxStrokeWidth="1sp">
+            <EditText
+                    android:id="@+id/nameRegisterEditext"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:textColorHighlight="@color/softBlueWithAlpha"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="textCapWords"
+                    android:paddingTop="5dp"
+                    android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                    android:textColor="@color/darkBlue" android:singleLine="false" android:selectAllOnFocus="false"
+                    android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotoregular"
+                android:paddingTop="3dp"
+                android:text="@string/nameRegister"
+                android:textColor="@color/softBlue"
+                android:textSize="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/passRegisterView"
+            android:layout_height="65dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/whiteBlue"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/nameRegisterView">
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/darkBlue"
+                android:layout_height="wrap_content" app:errorEnabled="false" app:boxStrokeColor="@color/darkBlue"
+                app:boxStrokeWidth="1sp">
+            <EditText
+                    android:id="@+id/passRegisterEditext"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:inputType="textPassword"
+                    android:textColorHighlight="@color/softBlueWithAlpha"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingTop="5dp"
+                    android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                    android:textColor="@color/darkBlue" android:singleLine="false" android:selectAllOnFocus="false"
+                    android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotoregular"
+                android:paddingTop="3dp"
+                android:text="@string/passwordRegister1"
+                android:textColor="@color/softBlue"
+                android:textSize="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/repeatpassRegisterView"
+            android:layout_height="65dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/whiteBlue"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/passRegisterView">
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/darkBlue"
+                android:layout_height="wrap_content" app:errorEnabled="false" app:boxStrokeColor="@color/darkBlue"
+                app:boxStrokeWidth="1sp">
+            <EditText
+                    android:id="@+id/repeatpassRegisterEditext"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:paddingTop="5dp"
+                    android:textColorHighlight="@color/softBlueWithAlpha"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/robotoregular" android:textSize="18dp"
+                    android:textColor="@color/darkBlue" android:singleLine="false" android:selectAllOnFocus="false"
+                    android:textAlignment="viewStart" android:textColorLink="#3F51B5"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotoregular"
+                android:paddingTop="3dp"
+                android:text="@string/passwordRegister2"
+                android:textColor="@color/softBlue"
+                android:textSize="14dp" />
+    </RelativeLayout>
+    <CheckBox
+            android:text="@string/acepto_los"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/darkBlue"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/TyCSwitcher"
+            android:fontFamily="@font/robotomedium" android:textColor="@color/darkBlue" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/repeatpassRegisterView" android:textColorLink="@color/darkBlue"
+            android:textSize="14dp"/>
+    <Button
+            android:text="@string/t_rminos_y_condiciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTyC" android:background="@android:color/transparent"
+            android:fontFamily="@font/robotomedium" android:textColor="@color/softBlue"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintTop_toTopOf="@+id/TyCSwitcher"
+            app:layout_constraintBottom_toBottomOf="@+id/TyCSwitcher"
+            app:layout_constraintStart_toEndOf="@+id/TyCSwitcher" android:layout_marginStart="4dp"
+            android:textSize="14dp"/>
+
+    <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/registrar"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPolicyPrivacy" />
+</android.support.constraint.ConstraintLayout>

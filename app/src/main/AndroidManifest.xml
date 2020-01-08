@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        android:versionCode="1"
+        android:versionName="1.0"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.chekinlite.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+            android:allowBackup="true"
+            android:configChanges="orientation"
+            android:icon="@drawable/chekin_iso"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".CurrentVersion.Activities.EditChekin"></activity>
+        <activity android:name=".CurrentVersion.Activities.ScanDocumentsAddGuest" />
+        <activity
+                android:name=".OldVersionFiles.AccountDetails"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".OldVersionFiles.AddCollaborator"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".OldVersionFiles.CollaboratorsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".CurrentVersion.Activities.SendChekinOnline"
+                android:screenOrientation="portrait" />
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false" />
+
+        <activity
+                android:name=".CurrentVersion.Activities.BookingDetails"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".CurrentVersion.Activities.AddGuest"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".OldVersionFiles.AddProperty"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".CurrentVersion.NavigationMenu.NavigationAcitivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".OldVersionFiles.SuscriptionActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".CurrentVersion.Activities.Forgot_Password"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".OldVersionFiles.TermsAndConditionsActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".CurrentVersion.Activities.SplashScreenActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait"
+                android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".CurrentVersion.Activities.MainActivity"
+                android:configChanges="orientation"
+                android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

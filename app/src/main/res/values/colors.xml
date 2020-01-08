@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="darkBlue">#00429A</color>
+    <color name="softBlue">#2699FB</color>
+    <color name="whiteBlue">#EBF7FF</color>
+    <color name="grayErrorMessage">#8A000000</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="grayLine">#1F000000</color>
+    <color name="pink">#FF9DDB</color>
+    <color name="greenCircle">#00FFC4</color>
+    <color name="yellowCircle">#FFC400</color>
+    <color name="redCircle">#FF5D8F</color>
+    <color name="softBlueWithAlpha">#802699FB</color>
+    <color name="alphaBlue">#B3FFFFFF</color>
+    <color name="cellSoftBlue">#F6FBFF</color>
+    <color name="searc">#00429A</color>
+
+</resources>

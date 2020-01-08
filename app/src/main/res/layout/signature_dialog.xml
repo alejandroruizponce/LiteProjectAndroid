@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content" android:background="@color/white">
+
+    <RelativeLayout android:id="@+id/layoutSignature" android:layout_width="331dp" android:layout_height="181dp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/blueborder_button"
+                    android:layout_marginEnd="80dp" android:layout_marginStart="80dp" android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonCancelSignature">
+        <com.kyanogen.signatureview.SignatureView
+                xmlns:sign="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/signature_view"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                sign:penSize="5dp"
+                android:background="@drawable/blueborder_button"
+                android:elevation="5dp"
+                sign:backgroundColor="#ffffff"
+                sign:penColor="#000000"
+                sign:enableSignature="true" sign:layout_constraintEnd_toEndOf="parent"
+                sign:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="32dp"
+                sign:layout_constraintBottom_toBottomOf="parent"/>
+    </RelativeLayout>
+    <TextView
+            android:text="@string/a_ade_tu_firma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textView9" android:textColor="@color/darkBlue" android:fontFamily="@font/robotomedium"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            android:textSize="14dp"/>
+
+    <Button
+            android:text="@string/cancelar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCancelSignature" android:background="@drawable/blueborder_button"
+            app:layout_constraintTop_toBottomOf="@+id/layoutSignature" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:textColor="@color/softBlue" android:textSize="14dp"/>
+    <Button
+            android:text="@string/a_adir_firma"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/buttonAddSignature"
+            android:background="@color/softBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" android:textSize="14dp"/>
+
+</android.support.constraint.ConstraintLayout>

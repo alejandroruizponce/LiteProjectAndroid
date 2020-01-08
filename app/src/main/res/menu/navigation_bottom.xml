@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_bookings"
+            android:icon="@drawable/bookings_icn"
+            android:title="@string/reservas"/>
+
+    <!--
+        <item
+                android:id="@+id/navigation_properties"
+                android:icon="@drawable/accom_icn"
+                android:title="@string/propiedades"/>  -->
+
+        <item
+                android:id="@+id/navigation_chekin"
+                android:icon="@drawable/icon_event_filled"
+                android:title="@string/nuevo_chekin"/>
+
+    <!--
+        <item
+                android:id="@+id/navigation_documents"
+                android:icon="@drawable/docs_icn"
+                android:title="@string/documentos"/> -->
+
+        <item
+                android:id="@+id/navigation_settings"
+                android:icon="@drawable/settings_icn"
+                android:title="@string/ajustes"/>
+
+    </menu>

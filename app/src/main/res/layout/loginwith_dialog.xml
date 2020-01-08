@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="280dp"
+                                             android:radius="6dip"
+                                             android:layout_height="wrap_content"
+                                             android:background="@drawable/dialog_background"
+                                             android:id="@+id/PMSView">
+    <TextView
+            android:text="@string/entrar_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" android:id="@+id/textView" android:textColor="@color/darkBlue"
+            android:fontFamily="@font/robotomedium" android:textSize="20dp" android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+            android:id="@+id/pmsBooking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:alpha="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+                android:id="@+id/nameBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bookingImage"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/robotomedium"
+                android:text="Booking"
+                android:textColor="@color/darkBlue"
+                android:textSize="20dp" />
+
+        <ImageView
+                android:id="@+id/bookingImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/booking_icn"
+                tools:layout_editor_absoluteY="58dp" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:id="@+id/pmsCloudbeds"
+                    android:alpha="0.5"
+                    app:layout_constraintTop_toBottomOf="@+id/pmsGuesty" android:layout_marginTop="24dp">
+        <TextView
+                android:text="Cloudbeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/nameCloudbeds" android:textColor="@color/darkBlue"
+                android:fontFamily="@font/robotomedium" android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp" android:layout_alignStart="@+id/cloudbedsImage"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/cloudbeds_logo_icon"
+                tools:layout_editor_absoluteY="58dp" app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/cloudbedsImage"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:paddingLeft="0dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/pmsBooking"
+                    android:alpha="0.5"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:id="@+id/pmsGuesty"
+                    android:layout_marginTop="24dp">
+        <TextView
+                android:text="Guesty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/nameGuesty" android:textColor="@color/darkBlue"
+                android:fontFamily="@font/robotomedium" android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp" android:layout_alignStart="@+id/guestyImage"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/guesty_logo"
+                tools:layout_editor_absoluteY="58dp" app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/guestyImage"
+                android:layout_centerVertical="true" android:layout_alignParentLeft="true" android:paddingLeft="0dp"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/buttonCancelPMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/cancelar"
+            android:textColor="@color/softBlue"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pmsCloudbeds" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".CurrentVersion.Activities.ScanDocumentsAddGuest">
+
+
+    <Button
+            android:id="@+id/buttonBackAD"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/back_arrow"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/titleScanDocument"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleScanDocument" />
+
+    <TextView
+            android:id="@+id/titleScanDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="TIPO DE DOCUMENTO"
+            android:textAlignment="center"
+            android:textColor="#00429A"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/subTitleScanDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="62dp"
+            android:text="Selecciona el tipo de documento."
+            android:textAlignment="center"
+            android:textColor="#00429A"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleScanDocument" />
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/IDOptionView"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subTitleScanDocument">
+
+        <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/idicon"
+                tools:src="@drawable/idicon" />
+
+        <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Documento de identidad"
+                android:textAlignment="center"
+                android:textColor="#00429A"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/passportOptionView"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IDOptionView">
+
+        <ImageView
+                android:id="@+id/imageView222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/passporticon"
+                tools:src="@drawable/passporticon" />
+
+        <TextView
+                android:id="@+id/textView152"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Pasaporte"
+                android:textAlignment="center"
+                android:textColor="#00429A"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView222"
+                app:layout_constraintStart_toEndOf="@+id/imageView222"
+                app:layout_constraintTop_toTopOf="@+id/imageView222" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/cameraDocumentLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subTitleScanDocument">
+
+        <Button
+                android:id="@+id/buttonScanDocumentSD"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/robotomedium"
+                android:text="CAPTURAR"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/camera" />
+
+        <com.camerakit.CameraKitView
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundedcorners"
+                android:keepScreenOn="true"
+
+                app:camera_facing="back"
+                app:camera_flash="auto"
+                app:camera_focus="continuous"
+                app:camera_permissions="camera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+        </com.camerakit.CameraKitView>
+
+        <View
+                android:id="@+id/viewSignature"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/detectionarea"
+                android:padding="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/camera"
+                app:layout_constraintEnd_toEndOf="@+id/camera"
+                app:layout_constraintStart_toStartOf="@+id/camera"
+                app:layout_constraintTop_toTopOf="@+id/camera" />
+
+
+        <ImageView
+                android:id="@+id/imageScannedAD"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/frame"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@id/camera"
+                app:layout_constraintLeft_toLeftOf="@id/camera"
+                app:layout_constraintRight_toRightOf="@id/camera"
+                app:layout_constraintTop_toTopOf="@id/camera" />
+
+        <ImageView
+                android:id="@+id/overlayImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/camera"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="@id/camera"
+                app:layout_constraintRight_toRightOf="@id/camera"
+                app:layout_constraintTop_toTopOf="@id/camera" />
+
+        <TextView
+                android:id="@+id/messageScanned"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:text="¡Escaneado con éxito!"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/viewSignature"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewSignature"
+                app:layout_constraintTop_toBottomOf="@+id/lottieAnimationCheck" />
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationCheck"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="@+id/camera"
+                app:layout_constraintEnd_toEndOf="@+id/camera"
+                app:layout_constraintStart_toStartOf="@+id/camera"
+                app:layout_constraintTop_toTopOf="@+id/camera"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="checkanimation.json"
+                app:lottie_loop="false" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
